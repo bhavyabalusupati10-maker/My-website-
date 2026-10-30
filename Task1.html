@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Ordering Website</title>
+        <style>
+                body {
+                                font-family: Arial;
+                                            background-color: #fff3e0;
+                                                        margin: 0;
+                                                                    text-align: center;
+                }
+
+                        header {
+                                        background-color: #e64a19;
+                                                    color: white;
+                                                                padding: 20px;
+                        }
+
+                                nav {
+                                                background-color: #333;
+                                                            padding: 12px;
+                                }
+
+                                        nav a {
+                                                        color: white;
+                                                                    text-decoration: none;
+                                                                                margin: 15px;
+                                        }
+
+                                                .offer {
+                                                                color: red;
+                                                                            font-size: 20px;
+                                                                                        font-weight: bold;
+                                                }
+
+                                                        .container {
+                                                                        display: flex;
+                                                                                    justify-content: center;
+                                                                                                flex-wrap: wrap;
+                                                        }
+
+                                                                .card {
+                                                                                background-color: white;
+                                                                                            width: 220px;
+                                                                                                        margin: 15px;
+                                                                                                                    padding: 15px;
+                                                                                                                                border-radius: 10px;
+                                                                                                                                            box-shadow: 0 0 8px gray;
+                                                                }
+
+                                                                        .card img {
+                                                                                        width: 100%;
+                                                                                                    height: 140px;
+                                                                                                                object-fit: cover;
+                                                                                                                            border-radius: 8px;
+                                                                        }
+
+                                                                                button {
+                                                                                                background-color: #e64a19;
+                                                                                                            color: white;
+                                                                                                                        border: none;
+                                                                                                                                    padding: 10px;
+                                                                                                                                                cursor: pointer;
+                                                                                                                                                            border-radius: 5px;
+                                                                                }
+
+                                                                                        footer {
+                                                                                                        background-color: #333;
+                                                                                                                    color: white;
+                                                                                                                                padding: 15px;
+                                                                                        }
+                                                                                            </style>
+                                                                                            </head>
+                                                                                            <body>
+
+                                                                                                <header>
+                                                                                                        <h1>Foodie Restaurant</h1>
+                                                                                                                <p>Delicious Food Delivered to Your Door!</p>
+                                                                                                                    </header>
+
+                                                                                                                        <nav>
+                                                                                                                                <a href="#home">Home</a>
+                                                                                                                                        <a href="#menu">Menu</a>
+                                                                                                                                                <a href="#reviews">Reviews</a>
+                                                                                                                                                        <a href="#contact">Contact</a>
+                                                                                                                                                            </nav>
+
+                                                                                                                                                                <section id="home">
+                                                                                                                                                                        <h2>Welcome to Foodie Restaurant</h2>
+                                                                                                                                                                                <p class="offer">Special Offer: 20% OFF on Orders!</p>
+                                                                                                                                                                                    </section>
+
+                                                                                                                                                                                        <h2 id="menu">Our Food Menu</h2>
+
+                                                                                                                                                                                            <div class="container">
+
+                                                                                                                                                                                                    <div class="card">
+                                                                                                                                                                                                                <img src="https://placehold.co/300x200?text=Pizza"
+                                                                                                                                                                                                                                 alt="Pizza">
+                                                                                                                                                                                                                                             <h3>Pizza</h3>
+                                                                                                                                                                                                                                                         <p>Price: ₹199</p>
+                                                                                                                                                                                                                                                                     <button onclick="order('Pizza')">Order Now</button>
+                                                                                                                                                                                                                                                                             </div>
+
+                                                                                                                                                                                                                                                                                     <div class="card">
+                                                                                                                                                                                                                                                                                                 <img src="https://placehold.co/300x200?text=Burger"
+                                                                                                                                                                                                                                                                                                                  alt="Burger">
+                                                                                                                                                                                                                                                                                                                              <h3>Burger</h3>
+                                                                                                                                                                                                                                                                                                                                          <p>Price: ₹99</p>
+                                                                                                                                                                                                                                                                                                                                                      <button onclick="order('Burger')">Order Now</button>
+                                                                                                                                                                                                                                                                                                                                                              </div>
+
+                                                                                                                                                                                                                                                                                                                                                                      <div class="card">
+                                                                                                                                                                                                                                                                                                                                                                                  <img src="https://placehold.co/300x200?text=Biryani"
+                                                                                                                                                                                                                                                                                                                                                                                                   alt="Biryani">
+                                                                                                                                                                                                                                                                                                                                                                                                               <h3>Chicken Biryani</h3>
+                                                                                                                                                                                                                                                                                                                                                                                                                           <p>Price: ₹249</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                       <button onclick="order('Chicken Biryani')">Order Now</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                   </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                       <section id="reviews">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                               <h2>Customer Reviews</h2>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>⭐⭐⭐⭐⭐ Great food and excellent service!</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </section>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <section id="contact">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <h2>Contact Us</h2>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <p>Phone: 9876543210</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>Email: foodie@example.com</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </section>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>© 2026 Foodie Restaurant</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </footer>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       function order(food) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    alert("You selected " + food);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </html>
+                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
