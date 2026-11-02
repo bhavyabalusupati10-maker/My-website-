@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Dashboard</title>
+<style>
+body{font-family:Arial;
+background:#f4f5f7;
+margin:0;
+padding:20px;
+}
+h1{text-align:center}
+.board{display:grid;
+grid-template-columns:re
+eat(3,1fr);
+gap:20px;
+}
+.column{background:#ebecf0;
+padding:10px;
+border-radius:8px;
+}
+.column h3{margin:10px}
+.task{background:white;
+padding:10px;
+border-radius:5px;
+margin:10px 0;
+box-shadow:0 1px 3px rgba(0,0,0,0.2);
+}
+.priority{font-size:12px;
+padding:2px 6px;
+border-radius:3px;
+color:white;
+}
+.high{background:red}.
+med{background:orange}.
+low{background:green}
+.progress{height:6px;
+background:#ddd;
+border-radius:3px;
+margin-top:8px;
+}
+.bar{height:100%;
+background:#0079bf;
+border-radius:3px;
+}
+.team{margin-top:5px;
+font-size:12px;
+}
+@media(max-width:700px){.board{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<h1>Project Management Dashboard</h1>
+<div class="board">
+<div class="column"><h3>To Do</h3>
+<div class="task">
+<b>Design Homepage</b>
+<br><span class="priority high">High</span> - Due: Nov 2<div class="progress"><div class="bar" style="width:20%"></div></div>
+<div class="team">👥 Bhavya, 
+Rahul
+</div></div>
+<div class="task">
+<b>Write Content</b>
+<br><span class="priority med">
+Medium
+</span> - Due: Nov 5
+<div class="progress"><div class="bar" style="width:0%">
+</div></div></div>
+</div>
+<div class="column"><h3>In Progress</h3>
+<div class="task"><b>Login Page</b><br><span class="priority high">High</span> - Due: Nov 1<div class="progress"><div class="bar" style="width:60%"></div></div><div class="team">👥 Bhavya</div></div>
+</div>
+<div class="column"><h3>Done</h3>
+<div class="task"><b>Project Setup</b><br><span class="priority low">Low</span><div class="progress"><div class="bar" style="width:100%"></div></div></div>
+</div>
+</div>
+</body>
+</html>
