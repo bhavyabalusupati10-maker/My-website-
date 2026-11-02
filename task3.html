@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ticket Booking</title>
+<style>
+body{font-family:Arial;
+background:#eef2ff;
+padding:20px;
+}
+.card{background:white;
+max-width:700px;
+margin:auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+h2{text-align:center}
+form{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.full{grid-column:span 2}
+label{font-weight:bold}
+input,select{width:100%;padding:8px;border:1px solid #ccc;border-radius:5px}
+button{grid-column:span 2;
+padding:10px;
+background:#4f46e5;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+table{width:100%;
+border-collapse:collapse;margin-top:20px;
+}
+th,td{border:1px solid 
+padding:8px;
+text-align:center;
+}
+th{background:#4f46e5;
+color:white;
+}
+.seat{display:inline-block;width:40px;
+height:40px;
+margin:5px;
+background:#ddd;
+text-align:center;
+line-height:40px;
+border-radius:5px;
+cursor:pointer;
+}
+.seat:hover{background:#4f46e5;
+color:white;
+}
+@media(max-width:600px){form{grid-template-columns:1fr}.full{grid-column:span 1}button{grid-column:span 1}}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>Bus & Train Booking</h2>
+<form>
+<label>From<input type="text" placeholder="Hyderabad" required>
+</label>
+<label>To<input type="text" placeholder="Vijayawada" required>
+</label>
+<label>Date<input type="date" required>
+</label>
+<label>Passengers<select><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+<label class="full">Travel Type<select><option>Bus</option><option>Train</option></select></label>
+<button type="submit">Search Buses/Trains</button>
+</form>
+
+<table>
+<tr><th>Service</th><th>Time</th><th>Fare</th><th>Seats</th></tr>
+<tr><td>Express Bus</td><td>06:00 AM</td><td>₹450</td><td>32</td></tr>
+<tr><td>Super Luxury</td><td>09:30 PM</td><td>₹750</td><td>18</td></tr>
+<tr><td>Train - Godavari</td><td>05:15 PM</td><td>₹320</td><td>120</td></tr>
+</table>
+
+<h3 style="margin-top:20px">Select Seat</h3>
+<div>
+<span class="seat">1</span><span class="seat">2</span><span class="seat">3</span><span class="seat">4</span>
+<span class="seat">5</span><span class="seat">6</span><span class="seat">7</span><span class="seat">8</span>
+</div>
+</div>
+</body>
+</html>
